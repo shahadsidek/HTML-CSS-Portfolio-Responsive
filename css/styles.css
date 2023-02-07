@@ -1,0 +1,150 @@
+.main-container {
+    border: 8px solid red;
+}
+
+.about-me {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    border: 8px solid rgb(46, 0, 251);
+    max-width: 1300px;
+    margin-bottom: 5em;
+    margin-top: 2em;
+}
+
+.about-me-image {
+    border: 5px solid rgb(0, 250, 29);
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.about-me-image img {
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+    position: relative;
+    top: -1.1em;
+}
+
+.about-me-info {
+    border: 5px solid rgb(255, 0, 212);
+    width: 60%;
+    padding: 1.5em;
+}
+
+.my-work {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2em;
+    row-gap: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    max-width: 1300px;
+}
+
+.project-one {
+    border: 5px solid rgb(229, 250, 0);
+
+}
+
+.project-two {
+    border: 5px solid rgb(250, 0, 137);
+
+}
+
+.project-three {
+    border: 5px solid rgb(179, 0, 250);
+
+}
+
+.project-four {
+    border: 5px solid rgb(29, 0, 250);
+
+}
+
+.project-five {
+    border: 5px solid rgb(0, 225, 250);
+
+}
+
+.project-six {
+    border: 5px solid rgb(117, 250, 0);
+
+}
+
+.src{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-details-title{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+@media (min-width: 500px) {
+    .my-work {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .about-me-info {
+        width: 85%;
+        font-size: 1.2em;
+    }
+
+    .about-me-image {
+        width: 50%;
+        height: 100%;
+        object-fit: fill;
+    }
+}
+
+
+@media (min-width: 900px) {
+    .my-work {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .my-work {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .about-me-info {
+        width: 85%;
+        font-size: 1.2em;
+    }
+
+    .about-me-image {
+        width: 50%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+}
