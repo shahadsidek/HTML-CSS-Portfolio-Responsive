@@ -5,14 +5,19 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: 0rem;
+    background: linear-gradient(to bottom right, rgb(55, 172, 195), white, white);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    background-size: 100vw 50vh;
 }
 
 .about-me {
     width: 90%;
     height: 30vh;
     background-color: rgb(255, 255, 255);
-    margin-top: 3em;
+    margin-top: 0em;
     display: flex;
     flex-direction: row;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -47,7 +52,7 @@
 
 .header-title {
     margin-bottom: 0px;
-    margin-top: 3em;
+    margin-top: 5em;
     padding: 0px;
 }
 
@@ -93,7 +98,7 @@
 
 .contact-me {
     margin-top: 3em;
-    width: 100%;
+    width: 100vw;
     /* height: 30vh; */
     background-color: rgb(55, 172, 195);
     color: #fff;
@@ -102,7 +107,6 @@
 .contact-me-subcontainer {
     display: flex;
     flex-direction: row;
-    padding: 3em;
 }
 
 .contact-info-image {
@@ -135,14 +139,15 @@
     vertical-align: middle;
 }
 
-.phone-container{
+.phone-container {
     margin-top: 1.5em;
 }
 
-.email-container{
+.email-container {
     margin-top: 0.5em;
     margin-bottom: 1em;
 }
+
 @media only screen and (min-width: 768px) {
 
     .my-projects {
@@ -225,7 +230,11 @@
     .my-projects {
         grid-template-columns: repeat(3, 1fr);
     }
-
+    .header-title {
+        margin-bottom: 0px;
+        margin-top: 5em;
+        padding: 0px;
+    }
     .about-me {
         width: 90%;
         height: 30vh;
@@ -262,6 +271,7 @@
         padding-left: 1.2em;
         font-size: 1.3em;
     }
+
     .contact-me {
         margin-top: 3em;
         width: 100%;
@@ -269,32 +279,50 @@
         background-color: rgb(55, 172, 195);
         color: #fff;
     }
-    
+
     .contact-me-subcontainer {
         display: flex;
         flex-direction: row;
         padding: 3em;
     }
-    
+
     .contact-info-image {
         width: 60%;
     }
-    
+
     .contact-info {
         padding: 2em;
         display: flex;
         flex-direction: column;
     }
-    
+
     .contact-me-icons {
         margin-top: 1.5em;
         color: black;
         text-align: center;
     }
-    
+
     .contact-me-icons i {
         font-size: 1.8em;
         padding: 0.3em;
+    }
+
+    .card {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .fa-solid+span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .phone-container {
+        margin-top: 1.5em;
+    }
+
+    .email-container {
+        margin-top: 0.5em;
+        margin-bottom: 1em;
     }
 }
 
