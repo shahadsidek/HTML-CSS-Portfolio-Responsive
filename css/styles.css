@@ -1,7 +1,5 @@
 .main-container {
     width: 70%;
-    /* height:100vh; */
-    background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -13,10 +11,11 @@
 .about-me {
     width: 90%;
     height: 30vh;
-    background-color: lime;
+    background-color: rgb(255, 255, 255);
     margin-top: 3em;
     display: flex;
     flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .about-me-info {
@@ -26,7 +25,6 @@
 
 .about-me-image {
     width: 40%;
-    /* border: 5px solid rgb(131, 36, 168); */
 }
 
 .about-me-img {
@@ -35,14 +33,29 @@
     width: 110%;
     height: 115%;
     margin: -1vw
-        /* border: 3px solid yellow; */
+}
+
+.about-me-icons {
+    margin-top: 2em;
+    float: right;
+}
+
+.about-me-icons i {
+    padding-left: 1.2em;
+    font-size: 1.3em;
+}
+
+.header-title {
+    margin-bottom: 0px;
+    margin-top: 3em;
+    padding: 0px;
 }
 
 .my-projects {
-    margin-top: 3em;
+    margin-top: 0px;
     width: 90%;
     /* height: 30vh; */
-    background-color: rgb(255, 145, 0);
+    background-color: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2em;
@@ -51,10 +64,14 @@
     margin-right: 1em;
     margin-bottom: 1em;
     max-width: 1300px;
-    padding-top: 1em;
+    padding-top: 0em;
     padding-left: 1em;
     padding-right: 1em;
     box-sizing: border-box;
+}
+
+.project-details {
+    padding: 0.8em;
 }
 
 .project-details-title {
@@ -70,11 +87,16 @@
     object-fit: cover;
 }
 
+.project-icons i {
+    padding-left: 1.2em;
+}
+
 .contact-me {
     margin-top: 3em;
     width: 100%;
     /* height: 30vh; */
-    background-color: rgb(255, 0, 247);
+    background-color: rgb(55, 172, 195);
+    color: #fff;
 }
 
 .contact-me-subcontainer {
@@ -95,6 +117,8 @@
 
 .contact-me-icons {
     margin-top: 1.5em;
+    color: black;
+    text-align: center;
 }
 
 .contact-me-icons i {
@@ -102,24 +126,42 @@
     padding: 0.3em;
 }
 
-/*
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
-@media (min-width: 500px) {
-    .my-work {
+.fa-solid+span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.phone-container{
+    margin-top: 1.5em;
+}
+
+.email-container{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+@media only screen and (min-width: 768px) {
+
+    .my-projects {
         grid-template-columns: repeat(2, 1fr);
+        width: 90%;
     }
 
     .about-me {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         width: 100%;
+        height: fit-content;
     }
 
     .about-me-info {
         width: 85%;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .about-me-image {
@@ -127,29 +169,103 @@
         height: 100%;
         object-fit: fill;
     }
+
+    .about-me-icons {
+        margin-top: 1em;
+        float: right;
+        margin-bottom: 1em;
+    }
+
+    .about-me-icons i {
+        padding-left: 1em;
+        font-size: 1em;
+    }
+
+    .header-title {
+        margin-bottom: 0px;
+        margin-top: 1em;
+        padding: 0px;
+    }
+
+    .about-me-img {
+        position: relative;
+        object-fit: fill;
+        width: 120%;
+        height: 125%;
+        /* border: 3px solid yellow; */
+    }
+
+    .contact-info-image {
+        width: 100%;
+    }
+
+    .contact-info {
+        width: 50%;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-me {
+        margin-top: 3em;
+        width: 100vw;
+        /* height: 30vh; */
+        background-color: rgb(55, 172, 195);
+        color: #fff;
+    }
+
+    .contact-me-subcontainer {
+        display: flex;
+        flex-direction: row;
+        padding: 3em;
+    }
 }
 
-
-@media (min-width: 900px) {
-    .my-work {
+@media only screen and (min-width: 992px) {
+    .my-projects {
         grid-template-columns: repeat(3, 1fr);
     }
 
     .about-me {
-        margin: 0 auto;
+        width: 90%;
+        height: 30vh;
+        background-color: rgb(255, 255, 255);
+        margin-top: 3em;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        width: 90%;
-        border: 8px solid rgb(46, 0, 251);
-        max-width: 1300px;
-        margin-bottom: 5em;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .about-me-info {
+        padding: 3em;
+        width: 60%;
+    }
+
+    .about-me-image {
+        width: 40%;
+    }
+
+    .about-me-img {
+        position: relative;
+        object-fit: cover;
+        width: 110%;
+        height: 115%;
+        margin: -1vw
+    }
+
+    .about-me-icons {
         margin-top: 2em;
+        float: right;
+    }
+
+    .about-me-icons i {
+        padding-left: 1.2em;
+        font-size: 1.3em;
     }
 }
 
-@media (max-width: 500px) {
-    .my-work {
+@media (max-width: 767px) {
+    .my-projects {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -159,19 +275,51 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        height: fit-content;
     }
 
     .about-me-info {
         width: 85%;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .about-me-image {
-        width: 50%;
+        width: 80%;
         height: 100%;
-        object-fit: fill;
+        object-fit: cover;
+        align-items: center;
     }
 
-}
+    .contact-me {
+        margin-top: 1em;
+        width: 100vw;
+        background-color: rgb(55, 172, 195);
+        color: #fff;
+    }
 
-*/
+    .contact-me-subcontainer {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .contact-info-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100%;
+    }
+
+    .contact-info-image img {
+        width: 100vw;
+        height: auto;
+    }
+
+    .fa-solid {
+        display: none;
+    }
+}
